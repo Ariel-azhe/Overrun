@@ -1,0 +1,265 @@
+MiniAssembler_mov(0, 0): 0x10000000
+MiniAssembler_mov(0, 1): 0x10000000
+MiniAssembler_mov(0, 32767): 0x10000000
+MiniAssembler_mov(0, -1): 0x10000000
+MiniAssembler_mov(0, -2): 0x10000000
+MiniAssembler_mov(0, -32767): 0x10000000
+MiniAssembler_mov(0, -32768): 0x10000000
+MiniAssembler_mov(1, 0): 0x10000000
+MiniAssembler_mov(1, 1): 0x10000000
+MiniAssembler_mov(1, 32767): 0x10000000
+MiniAssembler_mov(1, -1): 0x10000000
+MiniAssembler_mov(1, -2): 0x10000000
+MiniAssembler_mov(1, -32767): 0x10000000
+MiniAssembler_mov(1, -32768): 0x10000000
+MiniAssembler_mov(15, 0): 0x10000000
+MiniAssembler_mov(15, 1): 0x10000000
+MiniAssembler_mov(15, 32767): 0x10000000
+MiniAssembler_mov(15, -1): 0x10000000
+MiniAssembler_mov(15, -2): 0x10000000
+MiniAssembler_mov(15, -32767): 0x10000000
+MiniAssembler_mov(15, -32768): 0x10000000
+MiniAssembler_mov(29, 0): 0x10000000
+MiniAssembler_mov(29, 1): 0x10000000
+MiniAssembler_mov(29, 32767): 0x10000000
+MiniAssembler_mov(29, -1): 0x10000000
+MiniAssembler_mov(29, -2): 0x10000000
+MiniAssembler_mov(29, -32767): 0x10000000
+MiniAssembler_mov(29, -32768): 0x10000000
+MiniAssembler_mov(30, 0): 0x10000000
+MiniAssembler_mov(30, 1): 0x10000000
+MiniAssembler_mov(30, 32767): 0x10000000
+MiniAssembler_mov(30, -1): 0x10000000
+MiniAssembler_mov(30, -2): 0x10000000
+MiniAssembler_mov(30, -32767): 0x10000000
+MiniAssembler_mov(30, -32768): 0x10000000
+MiniAssembler_adr(0, 0x00000000, 0x00000000): 0x10000000
+MiniAssembler_adr(0, 0x00000000, 0x00000004): 0x10000000
+MiniAssembler_adr(0, 0x00000000, 0x001ffff0): 0x10000000
+MiniAssembler_adr(0, 0x00000000, 0x001ffffc): 0x10000000
+MiniAssembler_adr(0, 0x00000000, 0x01234568): 0x10000000
+MiniAssembler_adr(0, 0x00000000, 0x76543210): 0x10000000
+MiniAssembler_adr(0, 0x00000001, 0x00000000): 0x10000000
+MiniAssembler_adr(0, 0x00000001, 0x00000004): 0x10000000
+MiniAssembler_adr(0, 0x00000001, 0x001ffff0): 0x10000000
+MiniAssembler_adr(0, 0x00000001, 0x001ffffc): 0x10000000
+MiniAssembler_adr(0, 0x00000001, 0x01234568): 0x10000000
+MiniAssembler_adr(0, 0x00000001, 0x76543210): 0x10000000
+MiniAssembler_adr(0, 0x001ffffe, 0x00000000): 0x10000000
+MiniAssembler_adr(0, 0x001ffffe, 0x00000004): 0x10000000
+MiniAssembler_adr(0, 0x001ffffe, 0x001ffff0): 0x10000000
+MiniAssembler_adr(0, 0x001ffffe, 0x001ffffc): 0x10000000
+MiniAssembler_adr(0, 0x001ffffe, 0x01234568): 0x10000000
+MiniAssembler_adr(0, 0x001ffffe, 0x76543210): 0x10000000
+MiniAssembler_adr(0, 0x001fffff, 0x00000000): 0x10000000
+MiniAssembler_adr(0, 0x001fffff, 0x00000004): 0x10000000
+MiniAssembler_adr(0, 0x001fffff, 0x001ffff0): 0x10000000
+MiniAssembler_adr(0, 0x001fffff, 0x001ffffc): 0x10000000
+MiniAssembler_adr(0, 0x001fffff, 0x01234568): 0x10000000
+MiniAssembler_adr(0, 0x001fffff, 0x76543210): 0x10000000
+MiniAssembler_adr(0, 0x01234567, 0x00000000): 0x10000000
+MiniAssembler_adr(0, 0x01234567, 0x00000004): 0x10000000
+MiniAssembler_adr(0, 0x01234567, 0x001ffff0): 0x10000000
+MiniAssembler_adr(0, 0x01234567, 0x001ffffc): 0x10000000
+MiniAssembler_adr(0, 0x01234567, 0x01234568): 0x10000000
+MiniAssembler_adr(0, 0x01234567, 0x76543210): 0x10000000
+MiniAssembler_adr(0, 0x76543210, 0x00000000): 0x10000000
+MiniAssembler_adr(0, 0x76543210, 0x00000004): 0x10000000
+MiniAssembler_adr(0, 0x76543210, 0x001ffff0): 0x10000000
+MiniAssembler_adr(0, 0x76543210, 0x001ffffc): 0x10000000
+MiniAssembler_adr(0, 0x76543210, 0x01234568): 0x10000000
+MiniAssembler_adr(0, 0x76543210, 0x76543210): 0x10000000
+MiniAssembler_adr(1, 0x00000000, 0x00000000): 0x10000000
+MiniAssembler_adr(1, 0x00000000, 0x00000004): 0x10000000
+MiniAssembler_adr(1, 0x00000000, 0x001ffff0): 0x10000000
+MiniAssembler_adr(1, 0x00000000, 0x001ffffc): 0x10000000
+MiniAssembler_adr(1, 0x00000000, 0x01234568): 0x10000000
+MiniAssembler_adr(1, 0x00000000, 0x76543210): 0x10000000
+MiniAssembler_adr(1, 0x00000001, 0x00000000): 0x10000000
+MiniAssembler_adr(1, 0x00000001, 0x00000004): 0x10000000
+MiniAssembler_adr(1, 0x00000001, 0x001ffff0): 0x10000000
+MiniAssembler_adr(1, 0x00000001, 0x001ffffc): 0x10000000
+MiniAssembler_adr(1, 0x00000001, 0x01234568): 0x10000000
+MiniAssembler_adr(1, 0x00000001, 0x76543210): 0x10000000
+MiniAssembler_adr(1, 0x001ffffe, 0x00000000): 0x10000000
+MiniAssembler_adr(1, 0x001ffffe, 0x00000004): 0x10000000
+MiniAssembler_adr(1, 0x001ffffe, 0x001ffff0): 0x10000000
+MiniAssembler_adr(1, 0x001ffffe, 0x001ffffc): 0x10000000
+MiniAssembler_adr(1, 0x001ffffe, 0x01234568): 0x10000000
+MiniAssembler_adr(1, 0x001ffffe, 0x76543210): 0x10000000
+MiniAssembler_adr(1, 0x001fffff, 0x00000000): 0x10000000
+MiniAssembler_adr(1, 0x001fffff, 0x00000004): 0x10000000
+MiniAssembler_adr(1, 0x001fffff, 0x001ffff0): 0x10000000
+MiniAssembler_adr(1, 0x001fffff, 0x001ffffc): 0x10000000
+MiniAssembler_adr(1, 0x001fffff, 0x01234568): 0x10000000
+MiniAssembler_adr(1, 0x001fffff, 0x76543210): 0x10000000
+MiniAssembler_adr(1, 0x01234567, 0x00000000): 0x10000000
+MiniAssembler_adr(1, 0x01234567, 0x00000004): 0x10000000
+MiniAssembler_adr(1, 0x01234567, 0x001ffff0): 0x10000000
+MiniAssembler_adr(1, 0x01234567, 0x001ffffc): 0x10000000
+MiniAssembler_adr(1, 0x01234567, 0x01234568): 0x10000000
+MiniAssembler_adr(1, 0x01234567, 0x76543210): 0x10000000
+MiniAssembler_adr(1, 0x76543210, 0x00000000): 0x10000000
+MiniAssembler_adr(1, 0x76543210, 0x00000004): 0x10000000
+MiniAssembler_adr(1, 0x76543210, 0x001ffff0): 0x10000000
+MiniAssembler_adr(1, 0x76543210, 0x001ffffc): 0x10000000
+MiniAssembler_adr(1, 0x76543210, 0x01234568): 0x10000000
+MiniAssembler_adr(1, 0x76543210, 0x76543210): 0x10000000
+MiniAssembler_adr(15, 0x00000000, 0x00000000): 0x10000000
+MiniAssembler_adr(15, 0x00000000, 0x00000004): 0x10000000
+MiniAssembler_adr(15, 0x00000000, 0x001ffff0): 0x10000000
+MiniAssembler_adr(15, 0x00000000, 0x001ffffc): 0x10000000
+MiniAssembler_adr(15, 0x00000000, 0x01234568): 0x10000000
+MiniAssembler_adr(15, 0x00000000, 0x76543210): 0x10000000
+MiniAssembler_adr(15, 0x00000001, 0x00000000): 0x10000000
+MiniAssembler_adr(15, 0x00000001, 0x00000004): 0x10000000
+MiniAssembler_adr(15, 0x00000001, 0x001ffff0): 0x10000000
+MiniAssembler_adr(15, 0x00000001, 0x001ffffc): 0x10000000
+MiniAssembler_adr(15, 0x00000001, 0x01234568): 0x10000000
+MiniAssembler_adr(15, 0x00000001, 0x76543210): 0x10000000
+MiniAssembler_adr(15, 0x001ffffe, 0x00000000): 0x10000000
+MiniAssembler_adr(15, 0x001ffffe, 0x00000004): 0x10000000
+MiniAssembler_adr(15, 0x001ffffe, 0x001ffff0): 0x10000000
+MiniAssembler_adr(15, 0x001ffffe, 0x001ffffc): 0x10000000
+MiniAssembler_adr(15, 0x001ffffe, 0x01234568): 0x10000000
+MiniAssembler_adr(15, 0x001ffffe, 0x76543210): 0x10000000
+MiniAssembler_adr(15, 0x001fffff, 0x00000000): 0x10000000
+MiniAssembler_adr(15, 0x001fffff, 0x00000004): 0x10000000
+MiniAssembler_adr(15, 0x001fffff, 0x001ffff0): 0x10000000
+MiniAssembler_adr(15, 0x001fffff, 0x001ffffc): 0x10000000
+MiniAssembler_adr(15, 0x001fffff, 0x01234568): 0x10000000
+MiniAssembler_adr(15, 0x001fffff, 0x76543210): 0x10000000
+MiniAssembler_adr(15, 0x01234567, 0x00000000): 0x10000000
+MiniAssembler_adr(15, 0x01234567, 0x00000004): 0x10000000
+MiniAssembler_adr(15, 0x01234567, 0x001ffff0): 0x10000000
+MiniAssembler_adr(15, 0x01234567, 0x001ffffc): 0x10000000
+MiniAssembler_adr(15, 0x01234567, 0x01234568): 0x10000000
+MiniAssembler_adr(15, 0x01234567, 0x76543210): 0x10000000
+MiniAssembler_adr(15, 0x76543210, 0x00000000): 0x10000000
+MiniAssembler_adr(15, 0x76543210, 0x00000004): 0x10000000
+MiniAssembler_adr(15, 0x76543210, 0x001ffff0): 0x10000000
+MiniAssembler_adr(15, 0x76543210, 0x001ffffc): 0x10000000
+MiniAssembler_adr(15, 0x76543210, 0x01234568): 0x10000000
+MiniAssembler_adr(15, 0x76543210, 0x76543210): 0x10000000
+MiniAssembler_adr(29, 0x00000000, 0x00000000): 0x10000000
+MiniAssembler_adr(29, 0x00000000, 0x00000004): 0x10000000
+MiniAssembler_adr(29, 0x00000000, 0x001ffff0): 0x10000000
+MiniAssembler_adr(29, 0x00000000, 0x001ffffc): 0x10000000
+MiniAssembler_adr(29, 0x00000000, 0x01234568): 0x10000000
+MiniAssembler_adr(29, 0x00000000, 0x76543210): 0x10000000
+MiniAssembler_adr(29, 0x00000001, 0x00000000): 0x10000000
+MiniAssembler_adr(29, 0x00000001, 0x00000004): 0x10000000
+MiniAssembler_adr(29, 0x00000001, 0x001ffff0): 0x10000000
+MiniAssembler_adr(29, 0x00000001, 0x001ffffc): 0x10000000
+MiniAssembler_adr(29, 0x00000001, 0x01234568): 0x10000000
+MiniAssembler_adr(29, 0x00000001, 0x76543210): 0x10000000
+MiniAssembler_adr(29, 0x001ffffe, 0x00000000): 0x10000000
+MiniAssembler_adr(29, 0x001ffffe, 0x00000004): 0x10000000
+MiniAssembler_adr(29, 0x001ffffe, 0x001ffff0): 0x10000000
+MiniAssembler_adr(29, 0x001ffffe, 0x001ffffc): 0x10000000
+MiniAssembler_adr(29, 0x001ffffe, 0x01234568): 0x10000000
+MiniAssembler_adr(29, 0x001ffffe, 0x76543210): 0x10000000
+MiniAssembler_adr(29, 0x001fffff, 0x00000000): 0x10000000
+MiniAssembler_adr(29, 0x001fffff, 0x00000004): 0x10000000
+MiniAssembler_adr(29, 0x001fffff, 0x001ffff0): 0x10000000
+MiniAssembler_adr(29, 0x001fffff, 0x001ffffc): 0x10000000
+MiniAssembler_adr(29, 0x001fffff, 0x01234568): 0x10000000
+MiniAssembler_adr(29, 0x001fffff, 0x76543210): 0x10000000
+MiniAssembler_adr(29, 0x01234567, 0x00000000): 0x10000000
+MiniAssembler_adr(29, 0x01234567, 0x00000004): 0x10000000
+MiniAssembler_adr(29, 0x01234567, 0x001ffff0): 0x10000000
+MiniAssembler_adr(29, 0x01234567, 0x001ffffc): 0x10000000
+MiniAssembler_adr(29, 0x01234567, 0x01234568): 0x10000000
+MiniAssembler_adr(29, 0x01234567, 0x76543210): 0x10000000
+MiniAssembler_adr(29, 0x76543210, 0x00000000): 0x10000000
+MiniAssembler_adr(29, 0x76543210, 0x00000004): 0x10000000
+MiniAssembler_adr(29, 0x76543210, 0x001ffff0): 0x10000000
+MiniAssembler_adr(29, 0x76543210, 0x001ffffc): 0x10000000
+MiniAssembler_adr(29, 0x76543210, 0x01234568): 0x10000000
+MiniAssembler_adr(29, 0x76543210, 0x76543210): 0x10000000
+MiniAssembler_adr(30, 0x00000000, 0x00000000): 0x10000000
+MiniAssembler_adr(30, 0x00000000, 0x00000004): 0x10000000
+MiniAssembler_adr(30, 0x00000000, 0x001ffff0): 0x10000000
+MiniAssembler_adr(30, 0x00000000, 0x001ffffc): 0x10000000
+MiniAssembler_adr(30, 0x00000000, 0x01234568): 0x10000000
+MiniAssembler_adr(30, 0x00000000, 0x76543210): 0x10000000
+MiniAssembler_adr(30, 0x00000001, 0x00000000): 0x10000000
+MiniAssembler_adr(30, 0x00000001, 0x00000004): 0x10000000
+MiniAssembler_adr(30, 0x00000001, 0x001ffff0): 0x10000000
+MiniAssembler_adr(30, 0x00000001, 0x001ffffc): 0x10000000
+MiniAssembler_adr(30, 0x00000001, 0x01234568): 0x10000000
+MiniAssembler_adr(30, 0x00000001, 0x76543210): 0x10000000
+MiniAssembler_adr(30, 0x001ffffe, 0x00000000): 0x10000000
+MiniAssembler_adr(30, 0x001ffffe, 0x00000004): 0x10000000
+MiniAssembler_adr(30, 0x001ffffe, 0x001ffff0): 0x10000000
+MiniAssembler_adr(30, 0x001ffffe, 0x001ffffc): 0x10000000
+MiniAssembler_adr(30, 0x001ffffe, 0x01234568): 0x10000000
+MiniAssembler_adr(30, 0x001ffffe, 0x76543210): 0x10000000
+MiniAssembler_adr(30, 0x001fffff, 0x00000000): 0x10000000
+MiniAssembler_adr(30, 0x001fffff, 0x00000004): 0x10000000
+MiniAssembler_adr(30, 0x001fffff, 0x001ffff0): 0x10000000
+MiniAssembler_adr(30, 0x001fffff, 0x001ffffc): 0x10000000
+MiniAssembler_adr(30, 0x001fffff, 0x01234568): 0x10000000
+MiniAssembler_adr(30, 0x001fffff, 0x76543210): 0x10000000
+MiniAssembler_adr(30, 0x01234567, 0x00000000): 0x10000000
+MiniAssembler_adr(30, 0x01234567, 0x00000004): 0x10000000
+MiniAssembler_adr(30, 0x01234567, 0x001ffff0): 0x10000000
+MiniAssembler_adr(30, 0x01234567, 0x001ffffc): 0x10000000
+MiniAssembler_adr(30, 0x01234567, 0x01234568): 0x10000000
+MiniAssembler_adr(30, 0x01234567, 0x76543210): 0x10000000
+MiniAssembler_adr(30, 0x76543210, 0x00000000): 0x10000000
+MiniAssembler_adr(30, 0x76543210, 0x00000004): 0x10000000
+MiniAssembler_adr(30, 0x76543210, 0x001ffff0): 0x10000000
+MiniAssembler_adr(30, 0x76543210, 0x001ffffc): 0x10000000
+MiniAssembler_adr(30, 0x76543210, 0x01234568): 0x10000000
+MiniAssembler_adr(30, 0x76543210, 0x76543210): 0x10000000
+MiniAssembler_strb(0, 0): 0x10000000
+MiniAssembler_strb(0, 1): 0x10000000
+MiniAssembler_strb(0, 15): 0x10000000
+MiniAssembler_strb(0, 29): 0x10000000
+MiniAssembler_strb(0, 30): 0x10000000
+MiniAssembler_strb(1, 0): 0x10000000
+MiniAssembler_strb(1, 1): 0x10000000
+MiniAssembler_strb(1, 15): 0x10000000
+MiniAssembler_strb(1, 29): 0x10000000
+MiniAssembler_strb(1, 30): 0x10000000
+MiniAssembler_strb(15, 0): 0x10000000
+MiniAssembler_strb(15, 1): 0x10000000
+MiniAssembler_strb(15, 15): 0x10000000
+MiniAssembler_strb(15, 29): 0x10000000
+MiniAssembler_strb(15, 30): 0x10000000
+MiniAssembler_strb(29, 0): 0x10000000
+MiniAssembler_strb(29, 1): 0x10000000
+MiniAssembler_strb(29, 15): 0x10000000
+MiniAssembler_strb(29, 29): 0x10000000
+MiniAssembler_strb(29, 30): 0x10000000
+MiniAssembler_strb(30, 0): 0x10000000
+MiniAssembler_strb(30, 1): 0x10000000
+MiniAssembler_strb(30, 15): 0x10000000
+MiniAssembler_strb(30, 29): 0x10000000
+MiniAssembler_strb(30, 30): 0x10000000
+MiniAssembler_b(0x00000000, 0x00000000): 0x10000000
+MiniAssembler_b(0x00000000, 0x00000004): 0x10000000
+MiniAssembler_b(0x00000000, 0x001ffff0): 0x10000000
+MiniAssembler_b(0x00000000, 0x001ffffc): 0x10000000
+MiniAssembler_b(0x00000000, 0x01234568): 0x10000000
+MiniAssembler_b(0x00000004, 0x00000000): 0x10000000
+MiniAssembler_b(0x00000004, 0x00000004): 0x10000000
+MiniAssembler_b(0x00000004, 0x001ffff0): 0x10000000
+MiniAssembler_b(0x00000004, 0x001ffffc): 0x10000000
+MiniAssembler_b(0x00000004, 0x01234568): 0x10000000
+MiniAssembler_b(0x001ffff0, 0x00000000): 0x10000000
+MiniAssembler_b(0x001ffff0, 0x00000004): 0x10000000
+MiniAssembler_b(0x001ffff0, 0x001ffff0): 0x10000000
+MiniAssembler_b(0x001ffff0, 0x001ffffc): 0x10000000
+MiniAssembler_b(0x001ffff0, 0x01234568): 0x10000000
+MiniAssembler_b(0x001ffffc, 0x00000000): 0x10000000
+MiniAssembler_b(0x001ffffc, 0x00000004): 0x10000000
+MiniAssembler_b(0x001ffffc, 0x001ffff0): 0x10000000
+MiniAssembler_b(0x001ffffc, 0x001ffffc): 0x10000000
+MiniAssembler_b(0x001ffffc, 0x01234568): 0x10000000
+MiniAssembler_b(0x01234568, 0x00000000): 0x10000000
+MiniAssembler_b(0x01234568, 0x00000004): 0x10000000
+MiniAssembler_b(0x01234568, 0x001ffff0): 0x10000000
+MiniAssembler_b(0x01234568, 0x001ffffc): 0x10000000
+MiniAssembler_b(0x01234568, 0x01234568): 0x10000000
