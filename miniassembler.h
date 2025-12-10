@@ -15,7 +15,17 @@
       uiReg: the number of reg.  0 <= uiReg <= 31.
       iImmed: the immed value. -32768 <= iImmed <= 32767      */
 
-unsigned int MiniAssembler_mov(unsigned int uiReg, int iImmed);
+unsigned int MiniAssembler_mov(unsigned int uiReg, int iImmed)
+{
+   unsigned int mc;
+   unsigned int immed = (unsigned int) iImmed;
+   int i;
+   for (i = 31; i >= 0; i--)
+   {
+      putchar((immed & ()))
+   }
+   mc = 01010010100
+}
 
 /*--------------------------------------------------------------------*/
 

@@ -113,48 +113,42 @@ Address         Content         Description
 
 .bss
 Address         Description
+0x420044        char grade
 0x420058        A char array named 'name' with length BUFSIZE;
                 value at index 0: A
 0x420059        r
 0x420060        i
 0x420061        e
 0x420062        l
-0x420098        l
-0x420106        a
-0x420114        /
-0x420122        g
-0x420130        r
-0x420138        a
-0x420146        c
-0x420154        e
-0x420162        '\0'
-... (random characters)
-0x420448        
+0x420063        g
+0x420064        r
+0x420065        a
+0x420066        c
+0x420067        e
+0x420068        '\0'
+0x420072        01010000111111111111111101000000   adr x0, grade
+0x420076        01010010100000000000100000100001   mov x1, 'A'
+0x420080        00111000000000000000010000100000   str x1, [x0]
+0x420084        00010111111110100000111100111010    b 0x40089c
+...
+0x420106        random char
 
 .stack
 Offset      Description
-0           
-8
-16
-24
-32
-40
-48
-56          x30
-64          x21
-72          x20
-80          x19
-88          'B'
-96          'o'
-104         'b'
-108         '\0'
-...
-128         
+0           x19
+8           x20
+16          x21
+24          x30
+32          First 8 bytes of the buf array
+40          Second 8 bytes of the buf array
+48          Third 8 bytes of the buf array
+56          Fourth 8 bytes of the buf array
+64          Fifth 8 bytes of the buf array
+72          Sixth 8 bytes of the buf array
+_____
+80          0x400890
 
-0x400890         
-224         'B'
-232         'o'
-240         'b'
+
 
 
 
