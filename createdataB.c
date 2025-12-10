@@ -8,12 +8,12 @@ int main(void)
     int i;
     unsigned long ulData = 0x400890;
     psFILE = fopen("dataB", "w");
-    fprintf(psFILE, "ArielGrace");
+    fprintf(psFILE, "Ariel & Grace");
     for(i = 0; i < 1; i++)
     {
         fprintf(psFILE, "%c", '\0');
     }
-    for (i = 0; i < 37; i++)
+    for (i = 0; i < 34; i++)
     {
         fprintf(psFILE, "%c", 'a');
     }
