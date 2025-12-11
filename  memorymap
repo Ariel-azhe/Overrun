@@ -117,24 +117,26 @@ Address         Description
 0x420058        A char array named 'name' with length BUFSIZE;
                 value at index 0: A
 0x420059        r
-0x420060        i
-0x420061        e
-0x420062        l
-0x420063        
-0x420064        &
-0x420065        
-0x420066        G
-0x420067        r
-0x420068        a
-0x420069        c
-0x420070        e
-0x420068        '\0'
-0x420072        adr x0, grade
-0x420076        mov x1, 'A'
-0x420080        str x1, [x0]
-0x420084        b 0x40089c
+0x42005a        i
+0x42005b        e
+0x42005c        l
+0x42005d        
+0x42005e        &
+0x42005f        
+0x420060        G
+0x420061        r
+0x420062        a
+0x420063        c
+0x420064        e
+0x420065        '\0'
+0x420066        padding
+0x420067        padding
+0x420068        adr x0, grade
+0x42006c        mov x1, 'A'
+0x420070        strb x1, [x0]
+0x420074        b 0x420068
 ...
-0x420106        random char
+0x420087        random char
 
 .stack
 Offset      Description
