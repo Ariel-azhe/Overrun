@@ -114,29 +114,45 @@ Address         Content         Description
 .bss
 Address         Description
 0x420044        char grade
-0x420058        A char array named 'name' with length BUFSIZE;
-                value at index 0: A
+                Char array named 'name' with length BUFSIZE;
+0x420058        G
 0x420059        r
-0x42005a        i
-0x42005b        e
-0x42005c        l
-0x42005d        
-0x42005e        &
-0x42005f        
-0x420060        G
-0x420061        r
-0x420062        a
-0x420063        c
-0x420064        e
-0x420065        '\0'
-0x420066        padding
-0x420067        padding
-0x420068        adr x0, grade
-0x42006c        mov x1, 'A'
-0x420070        strb x1, [x0]
-0x420074        b 0x420068
+0x42005a        a
+0x42005b        c
+0x42005c        e
+0x42005d        '\0'
+0x42005e        padding
+0x42005f        padding
+0x420060        mov x0, 'A'
+0x420064        adr x1, grade
+0x420068        strb x0, [x1]
+0x42006b        b 0x40089c
 ...
-0x420087        random char
+0x420087        0x420068
+
+0x420044        char grade
+                Char array named 'name' with length BUFSIZE;
+0x420058        G
+0x420059        r
+0x42005a        a
+0x42005b        c
+0x42005c        e
+0x42005d        '\0'
+0x42005e        padding
+0x42005f        padding
+0x420060        mov x1, 'A'
+0x420064        adr x0, grade
+0x420068        strb x1, [x0]
+0x42006c        bl      0x400690 <printf@plt>
+0x420070        mov x0, '+'
+0x420074        adr x1, grade
+0x420078        strb x0, [x1]
+0x42007c        adr     x0, 0x400920
+0x420080        bl      0x400690 <printf@plt>
+0x420084        b 0x40089c
+...
+0x420087        0x4008b0
+
 
 .stack
 Offset      Description
@@ -150,7 +166,6 @@ Offset      Description
 56          Fourth 8 bytes of the buf array
 64          Fifth 8 bytes of the buf array
 72          Sixth 8 bytes of the buf array
-_____
 80          0x400890
 
 

