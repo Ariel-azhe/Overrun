@@ -84,7 +84,6 @@ unsigned int MiniAssembler_strb(unsigned int uiFromReg,
    unsigned int uiToReg)
 {
    unsigned int uiInstr;
-   unsigned int uiDisp;
 
    /* Base Instruction Code */
    uiInstr = 0x39000000;
@@ -93,7 +92,6 @@ unsigned int MiniAssembler_strb(unsigned int uiFromReg,
    setField(uiFromReg, 0, &uiInstr, 0, 5);
    setField(uiToReg, 0, &uiInstr, 5, 5);
    return uiInstr;
-
 }
 
 /*--------------------------------------------------------------------*/
@@ -113,6 +111,8 @@ unsigned int MiniAssembler_b(unsigned long ulAddr,
 
    return uiInstr;
 }
+
+/*--------------------------------------------------------------------*/
 
 unsigned int MiniAssembler_bl(unsigned long ulAddr,
    unsigned long ulAddrOfThisInstr)
