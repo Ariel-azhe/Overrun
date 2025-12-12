@@ -58,11 +58,11 @@ unsigned int MiniAssembler_b(unsigned long ulAddr,
 
 /*--------------------------------------------------------------------*/
 
-/* Return the machine language equivalent of "bl addr".
+/* Return the machine language equivalent of "bl someLabel".
 
    Parameters:
-      ulAddr: the address denoted by addr, that is, the address to
-         which the branch should occur (must be a multiple of 4).
+      ulAddr: the address denoted by someLabel, that is, the address where
+         the label is stored in the program memory.
       ulAddrOfThisInstr: the address of the bl instruction itself
          (must be a multiple of 4).                                   */
 

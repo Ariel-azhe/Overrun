@@ -123,16 +123,16 @@ Address         A Description               A+ Description
 0x42005b        c                           c
 0x42005c        e                           e
 0x42005d        '\0'                        '\0'
-0x42005e        padding                     A
-0x42005f        padding                     '\0'
+0x42005e        padding('\0')               A
+0x42005f        padding('\0')               '\0'
 0x420060        mov x0, 'A'                 adr x0, name[6]
 0x420064        adr x1, grade               bl      0x400690 <printf@plt>
 0x420068        strb x0, [x1]               mov x1, '+'
-0x42006c        b 0x40089c                  adr x1, grade
-0x420070                                    bl      0x400690 <printf@plt>
-0x420074                                    b 0x40089c
-...
-0x420087        0x420068                    0x4008b0
+0x42006c        b 0x40089c                  adr x0, "%c is your grade.\n"
+0x420070        '\0'                        bl      0x400690 <printf@plt>
+0x420074        '\0'                        b 0x4008b0
+... (all '\0')
+0x420087        0x420060                    0x420060
 
 
 .stack
@@ -141,13 +141,13 @@ Offset      Description
 8           x20
 16          x21
 24          x30
-32          First 8 bytes of the buf array
-40          Second 8 bytes of the buf array
-48          Third 8 bytes of the buf array
-56          Fourth 8 bytes of the buf array
-64          Fifth 8 bytes of the buf array
-72          Sixth 8 bytes of the buf array
-80          0x400890
+32          buf[0]-buf[7]
+40          buf[8]-buf[15]
+48          buf[16]-buf[23]
+56          buf[24]-buf[31]
+64          buf[32]-buf[39]
+72          buf[40]-buf[47]
+80          getName's x30
 
 
 
