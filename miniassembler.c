@@ -19,6 +19,7 @@ static void setField(unsigned int uiSrc, unsigned int uiSrcStartBit,
                      unsigned int *puiDest, unsigned int uiDestStartBit,
                      unsigned int uiNumBits)
 {
+   assert(puiDest != NULL);
    uiSrc = uiSrc << (32 - uiNumBits - uiSrcStartBit);
    uiSrc = uiSrc >> (32 - uiNumBits);
    uiSrc = uiSrc << (uiDestStartBit);

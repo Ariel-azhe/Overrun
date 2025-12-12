@@ -148,19 +148,3 @@ Offset      Description
 64          buf[32]-buf[39]
 72          buf[40]-buf[47]
 80          getName's x30
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
